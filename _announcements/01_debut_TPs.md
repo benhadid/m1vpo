@@ -1,6 +1,6 @@
 ---
-date: 2021-01-22T17:00:00+1:00
+date: 2021-04-21T08:00:00+1:00
 ---
-Les travaux dirigés commencent le samedi 23 janvier (labo 4).
+Les séances en salle machines commencent le lundi 26 avril (labo 4).
 <!--Nothing here yet -->
 <!--Sample announcement, Please check out [here](/). -->

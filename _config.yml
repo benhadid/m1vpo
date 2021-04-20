@@ -1,5 +1,5 @@
 # Site settings
-course_name: Vision par Ordinateur (M1VPO)
+course_name: Vision Par Ordinateur (M1VPO)
 course_description: > # this means to ignore newlines until "course_semester:"
   Ce cours est une introduction à la vision par ordinateur. Les sujets traités incluent : les modèles de caméras, 
   la géométrie à vues multiples, la reconstruction tridimensionnelle, certains traitements d'image de bas niveau et 

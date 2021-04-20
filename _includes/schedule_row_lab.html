@@ -15,10 +15,10 @@
     {% assign d = include.event.due_event.date | date : "%w" | minus: 0 %}
     {{ site.data.fr.days[d] }}
 </div>
-<div class="col col-2" style="font-weight: bold" data-label="Description">
+<div class="col col-4" style="font-weight: bold" data-label="Description">
     {{ include.event.title }}
 </div>
-<div class="col col-4" data-label="Course Material">
+<div class="col col-2" data-label="Course Material">
     [<a href="{{ include.event.url | prepend: site.baseurl}}">Énoncé</a>]
     {% if include.event.solutions %}
     [<a href="{{ include.event.solutions | prepend: site.baseurl}}">Solution</a>]
