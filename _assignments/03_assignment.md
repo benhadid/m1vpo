@@ -3,7 +3,7 @@ type: assignment
 date: 2021-05-31T10:00:00+1:00
 title: 'Image panoramique'
 attachment: /static_files/assignments/hw2.zip
-weight: '20%'
+weight: '30%'
 hide_from_announcements: True
 due_event:
     type: due
