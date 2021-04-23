@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2021-06-16T08:00:00+1:00
+date: 2021-06-23T08:00:00+1:00
 title: Stéréovision
 tldr: "Retrouver l'information 3D à partir de deux caméras (ou plus)"
 thumbnail: /static_files/presentations/lec_09.jpg

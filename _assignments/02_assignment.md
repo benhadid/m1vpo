@@ -1,13 +1,13 @@
 ---
 type: assignment
-date: 2021-05-10T10:00:00+1:00
+date: 2021-05-17T10:00:00+1:00
 title: 'Détecteur, descripteur et mise en correspondance de primitives'
 attachment: /static_files/assignments/hw1.zip
 weight: '30%'
 hide_from_announcements: True
 due_event:
     type: due
-    date: 2021-05-10T17:00:00+1:00
+    date: 2021-05-17T17:00:00+1:00
     description: 'Devoir #2 - à remettre'
 ---
 

@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2021-05-12T08:00:00+1:00
+date: 2021-05-19T08:00:00+1:00
 title: Transformations et déformations 
 tldr: "Transformations affine et projective"
 thumbnail: /static_files/presentations/lec_04.jpg

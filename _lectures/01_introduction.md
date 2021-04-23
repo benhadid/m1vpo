@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2021-04-21T08:00:00+1:00
+date: 2021-04-28T08:00:00+1:00
 title: Introduction
 tldr: "Définition et applications de la vision par ordinateur"
 thumbnail: /static_files/presentations/lec_01.jpg

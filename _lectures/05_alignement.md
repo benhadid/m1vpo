@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2021-05-19T08:00:00+1:00
+date: 2021-05-26T08:00:00+1:00
 title: Alignement des images 
 tldr: "Comment transformer des images affin de les aligner pour en faire une image panoramique"
 thumbnail: /static_files/presentations/lec_05.jpg

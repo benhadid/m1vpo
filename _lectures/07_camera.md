@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2021-06-02T08:00:00+1:00
+date: 2021-06-09T08:00:00+1:00
 title: Appareil photographique 
 tldr: "Comment l'image est formée dans un appareil photographique"
 thumbnail: /static_files/presentations/lec_07.jpg

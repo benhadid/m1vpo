@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2021-06-09T08:00:00+1:00
+date: 2021-06-16T08:00:00+1:00
 title: Etalonnage de caméra
 tldr: "Déterminer les paramètres intrinsèques et extrinsèques d'une caméra"
 thumbnail: /static_files/presentations/lec_08.jpg
