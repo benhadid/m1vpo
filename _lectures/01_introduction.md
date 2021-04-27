@@ -9,3 +9,6 @@ links:
     - url: https://1drv.ms/p/s!Agf0g-qZKM8_4C9kyDn1nHdPIanA?e=EkiE0I
       name: visualiser
 ---
+
+**Références :**
+- [Szeliski]({{ site.baseurl }}/_images/Szeliski2ndBookFrontCover.png) : 1
