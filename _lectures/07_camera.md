@@ -6,7 +6,7 @@ tldr: "Comment l'image est formée dans un appareil photographique"
 thumbnail: /static_files/presentations/lec_07.jpg
 hide_from_announcements: True
 links:
-    - url:  https://1drv.ms/p/s!Agf0g-qZKM8_1BeTOlMhwAtiDuo9?e=FgHo2T
+    - url:  https://1drv.ms/p/s!Agf0g-qZKM8_1BeTOlMhwAtiDuo9?e=Ekd2kM
       name: visualiser
     - url:  https://1drv.ms/p/s!Agf0g-qZKM8_2TQg7y481Kyipsnz?e=uDeeKZ
       name: diaporama

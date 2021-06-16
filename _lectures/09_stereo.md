@@ -8,6 +8,8 @@ hide_from_announcements: True
 links:
     - url:  https://1drv.ms/p/s!Agf0g-qZKM8_2TI85XT8V9f6qD5a?e=wI7ieK
       name: visualiser
+    - url:  https://1drv.ms/p/s!Agf0g-qZKM8_2TNm_EZRbv6J0YIP?e=0ydcMe
+      name: diaporama
 ---
 
 **Références :**
