@@ -32,7 +32,7 @@
             {% elsif n.type == 'assignment' %}
                 Devoir récemment publié : [<a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>]
             {% elsif n.type == 'quiz' %}
-                Quiz récemment publié : [<a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>]
+                Quiz récemment publié : [<a href="{{ n.link }}">{{ n.title }}</a>]
             {% elsif n.type == 'project' %}
                 Projet récemment publié : [<a href="{{ n.url | prepend: site.baseurl }}">{{ n.title }}</a>]
             {% else%}

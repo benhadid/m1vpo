@@ -1,12 +1,12 @@
 ---
 type: lecture
-date: 2021-04-28T08:00:00+1:00
+date: 2022-03-10T08:00:00+1:00
 title: Introduction
 tldr: "Définition et applications de la vision par ordinateur"
 thumbnail: /static_files/presentations/lec_01.jpg
 hide_from_announcements: True
 links:
-    - url: https://1drv.ms/p/s!Agf0g-qZKM8_4C9kyDn1nHdPIanA?e=EkiE0I
+    - url: https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EUsJIIhn-WBBo_ht08JcYSoB5XRGTDNXgFHN_zYC-co-WQ?e=hs2dRg
       name: visualiser
 ---
 

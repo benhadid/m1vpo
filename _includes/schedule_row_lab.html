@@ -2,11 +2,12 @@
 
 <div class="col col-1" style="color: #000000 ;font-weight: bold;" data-label="Event">Travaux Pratiques</div>
 
-<div class="col col-1-2" data-label="Date">
-    <!--
+<div class="col col-1-2" style="font-weight: bold" data-label="Date">
+    {% comment %}
     {{ include.event.date | date: site.dateformat }}
     <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
-    -->
+    {% endcomment %}
+    
     {{ include.event.due_event.date | date: "%-d" }}
     {% assign m = include.event.due_event.date | date: "%-m" | minus: 1 %}
     {{ site.data.fr.months[m] }}
@@ -15,12 +16,18 @@
     {% assign d = include.event.due_event.date | date : "%w" | minus: 0 %}
     {{ site.data.fr.days[d] }}
 </div>
-<div class="col col-4" style="font-weight: bold" data-label="Description">
+<div class="col col-2" style="font-weight: bold" data-label="Description">
     {{ include.event.title }}
 </div>
-<div class="col col-2" data-label="Course Material">
-    [<a href="{{ include.event.url | prepend: site.baseurl}}">Énoncé</a>]
-    {% if include.event.solutions %}
-    [<a href="{{ include.event.solutions | prepend: site.baseurl}}">Solution</a>]
+<div class="col col-4" data-label="Course Material">
+    {% if include.event.hide_from_announcements %}
+       <span>À publier</span>
+    {% else %}
+       <span style="font-weight: bold">[
+          <a href="{{ include.event.url | prepend: site.baseurl}}">Énoncé</a>
+          {% if include.event.solutions %}
+             , <a href="{{ include.event.solutions | prepend: site.baseurl}}">Solution</a>
+          {% endif %}
+       ]</span>
     {% endif %}
 </div>

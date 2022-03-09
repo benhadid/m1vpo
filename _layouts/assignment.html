@@ -6,8 +6,11 @@ title: page.title
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-    <!--
     <p class="post-meta">Publié le
+      <!--
+      {{ page.date | date: "%A" }}
+      {{ page.date | date: site.dateformat }}
+      -->
       {% assign d = page.date | date : "%w" | minus: 0 %}
       {{ site.data.fr.days[d] }}
       {{ page.date | date: "%-d" }}
@@ -15,13 +18,12 @@ title: page.title
       {{ site.data.fr.months[m] }}
       {{ page.date | date: "%Y" }}
     </p>
-    -->
 
   </header>
 
   <div>
     {% if page.due_event %}
-    <span style="font-weight: bold">Echéance :
+    <span style="font-weight: bold">Date prévue :
       <!-- {{ page.due_event.date | date: site.dateformat }} -->
 
       {% assign d = page.due_event.date | date : "%w" | minus: 0 %}
@@ -31,12 +33,8 @@ title: page.title
       {{ site.data.fr.months[m] }}
       {{ page.due_event.date | date: "%Y" }}
     </span>
-    {% endif %}
 
-    {% if page.weight %}
-    <p style="font-weight: bold">Note : {{ page.weight }}</p>
     {% endif %}
-
     <p style="font-weight: bold">Télécharger
       {% if page.pdf %}
       [<a href="{{ page.pdf | prepend: site.baseurl }}">énoncé</a>]
@@ -46,11 +44,8 @@ title: page.title
       {% endif %}
       {% if page.solutions %}
       [<a href="{{ page.solutions | prepend: site.baseurl }}">solution</a>]
-      {% endif %}      
+      {% endif %}
     </p>
-
-
-
 
     <!--
     <div style="color: gray;">

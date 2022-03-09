@@ -5,7 +5,7 @@ course_description: > # this means to ignore newlines until "course_semester:"
   la géométrie à vues multiples, la reconstruction tridimensionnelle, certains traitements d'image de bas niveau et 
   les problèmes de vision de haut niveau tels que la reconnaissance d'objets et de scènes.
   
-course_semester: "Printemps 2021"
+course_semester: "Printemps 2022"
 
 baseurl: "/m1vpo" # the subpath of your site, e.g. /blog/
 url: "https://benhadid.github.io/" # the base hostname & protocol for your site

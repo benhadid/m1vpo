@@ -1,10 +1,11 @@
 <div class="col col-1" style="color: #a94442 ;font-weight: bold;" data-label="Event">Projet</div>
 <div class="col col-1-2" style="font-weight: bold" data-label="Date">
 
-    <!--
+    {% comment %}
     {{ include.event.date | date: site.dateformat }}
     <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
-    -->
+    {% endcomment %}
+    
     {{ include.event.date | date: "%-d" }}
     {% assign m = include.event.date | date: "%-m" | minus: 1 %}
     {{ site.data.fr.months[m] }}
@@ -14,8 +15,8 @@
     {{ site.data.fr.days[d] }}
 
 </div>
-<div class="col col-4" style="font-weight: bold" data-label="Description">
+<div class="col col-2" style="font-weight: bold" data-label="Description">
     {{ include.event.description }}
 </div>
-<div class="col col-2 markdown-content" style="font-weight: bold" data-label="Course Material">
+<div class="col col-4 markdown-content"  data-label="Course Material">
 </div>

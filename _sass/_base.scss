@@ -152,6 +152,10 @@ a {
     }
 }
 
+a img { display:none; }
+a:hover img { display:block; }
+
+
 /* .post-content a, .home a {
 	font-weight: 500;
 } */

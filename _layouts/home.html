@@ -12,17 +12,6 @@ layout: default
     <h2>Aperçu sur le cours</h2>
     <p>{{ site.course_description }}</p>
     
-    <!--
-    <br />
-    <h2>Prérequis pour ce cours</h2>
-    <p>{{ site.course_prerequisites }}</p>
-
-    <br />
-    <h2>Objectives de ce cours</h2>
-    <p>{{ site.course_objectives }}</p>
-    -->
-
-
     {{ content }}
 
     {% if site.data.previous_offering and site.data.previous_offering.offerings and site.data.previous_offering.offerings.size > 0 %}
@@ -34,6 +23,7 @@ layout: default
     </ul>
     {% endif %}
 
+    <br>
     <div>
         <div style="width:35%; float: left">
             <!-- <h2>Instructors</h2> -->
