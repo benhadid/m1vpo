@@ -3,3 +3,4 @@ _site
 _scratch
 .jekyll-cache
 Gemfile.lock
+*-sol.zip

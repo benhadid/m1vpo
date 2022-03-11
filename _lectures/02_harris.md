@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-03-17T08:00:00+1:00
+date: 2022-04-07T08:00:00+1:00
 title: Primitives locales & détection de coins 
 tldr: "Comment identifier d'une manière efficace et reproductible des zones caractéristiques dans l'image"
 thumbnail: /static_files/presentations/lec_02.jpg

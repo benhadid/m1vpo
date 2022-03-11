@@ -1,13 +1,13 @@
 ---
 type: assignment
-date: 2022-03-17T10:00:00+1:00
+date: 2022-04-07T10:00:00+1:00
 title: 'Détecteur, descripteur et mise en correspondance de primitives'
 attachment: /static_files/assignments/hw1.zip
 weight: '30%'
 hide_from_announcements: True
 due_event:
     type: due
-    date: 2022-04-10T17:00:00+1:00
+    date: 2022-04-17T17:00:00+1:00
     description: 'Devoir #2 - à remettre'
 ---
 
@@ -25,13 +25,13 @@ due_event:
       user@vlab$ jupyter notebook
       ```      
 
-  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courrant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
+  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
 
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
 
-  6. Pour pouvoir utiliser l’interface utilisateur **featuresUI.py** depuis la machine virtuelle, des paquetages supplémentaires devront être installés. En ce sens, depuis un terminal, tapez les commandes suivantes :
+  6. Pour pouvoir utiliser l’interface graphique **featuresUI.py** dans la machine virtuelle, vous devez installer des paquetages supplémentaires suivants :
       ```bash
       user@vlab$ sudo apt update
       user@vlab$ sudo apt install python3-tk python-tk 
       ```      
-      Le mot de passe pour le sudo est :  ```user```  si vous ne l’avez pas changé.
+      Le mot de passe pour le sudo est :  ``user``  si vous ne l’avez pas changé.

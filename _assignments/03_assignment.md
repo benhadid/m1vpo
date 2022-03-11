@@ -1,6 +1,6 @@
 ---
 type: assignment
-date: 2022-04-14T10:00:00+1:00
+date: 2022-04-21T10:00:00+1:00
 title: 'Image panoramique'
 attachment: /static_files/assignments/hw2.zip
 weight: '30%'
@@ -25,7 +25,7 @@ due_event:
       user@vlab$ jupyter notebook
       ```      
 
-  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courrant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
+  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
 
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
 

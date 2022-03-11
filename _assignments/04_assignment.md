@@ -1,13 +1,13 @@
 ---
 type: assignment
-date: 2022-05-05T10:00:00+1:00
+date: 2022-05-12T10:00:00+1:00
 title: 'Reconstruction 3D'
 attachment: /static_files/assignments/hw3.zip
 weight: '40%'
 hide_from_announcements: True
 due_event:
     type: due
-    date: 2022-05-22T17:00:00+1:00
+    date: 2022-05-29T17:00:00+1:00
     description: 'Devoir #4 - à remettre'
 ---
 
@@ -25,7 +25,7 @@ due_event:
       user@vlab$ jupyter notebook
       ```      
 
-  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courrant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
+  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
 
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
 

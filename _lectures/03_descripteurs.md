@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-04-07T08:00:00+1:00
+date: 2022-04-14T08:00:00+1:00
 title: Primitives locales & descripteurs 
 tldr: "Comment décrire d'une manière 'unique' et reproductible des zones caractéristiques dans l'image"
 thumbnail: /static_files/presentations/lec_03.jpg

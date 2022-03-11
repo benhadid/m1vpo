@@ -1,12 +1,12 @@
 ---
 type: assignment
-date: 2022-03-10T10:00:00+1:00
+date: 2022-03-17T10:00:00+1:00
 title: 'Introduction à Python/Numpy et au calcul scientifique'
 attachment: /static_files/assignments/hw0.zip
 hide_from_announcements: False
 due_event:
     type: due
-    date: 2022-03-13T17:00:00+1:00
+    date: 2022-04-03T17:00:00+1:00
     description: 'Devoir #1 - à remettre'
 ---
 
