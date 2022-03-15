@@ -42,4 +42,10 @@ Une machine virtuelle ubuntu semblable à la configuration utilisée dans les la
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
 
 
+<iframe src="https://nbviewer.org/github/benhadid/m1vpo/blob/gh-pages/static_files/assignments/hw0/hw0.ipynb" width="100%" height="800em"></iframe>
+
+
+
+<iframe src="https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb" width="100%" height="800em"></iframe>
+
 
