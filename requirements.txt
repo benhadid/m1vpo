@@ -1,0 +1,4 @@
+numpy==1.17.4
+Pillow==7.0.0
+scikit-image==0.16.2
+opencv-python-headless~=3.4.17.63
