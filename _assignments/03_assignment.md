@@ -11,9 +11,13 @@ due_event:
     description: 'Devoir #3 - à remettre'
 ---
 
-# Démarche à suivre  
+# Version en ligne
 
-  1. Depuis votre machine VM, téléchargez le fichier de démarrage (fichier ```hw2.zip```) du devoir et décompressez le dans le répertoire de votre choix. 
+Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw2%2Fhw2.ipynb) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
+
+# Version locale  
+
+  1. Depuis votre machine VM, téléchargez le fichier de démarrage et décompressez le dans le répertoire de votre choix. 
 
   2. Depuis un terminal, accédez au répertoire du devoir (par exemple hw2) :
       ```bash
