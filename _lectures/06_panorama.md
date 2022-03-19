@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2022-05-05T08:00:00+1:00
+date: 2022-05-12T08:00:00+1:00
 title: Image panoramique 
 tldr: "Comment fusionner des images alignées pour en faire une seule image panoramique"
 thumbnail: /static_files/presentations/lec_06.jpg

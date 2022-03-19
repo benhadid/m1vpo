@@ -1,12 +1,12 @@
 ---
 type: assignment
-date: 2022-03-17T10:00:00+1:00
+date: 2022-04-07T10:00:00+1:00
 title: 'Introduction à Python/Numpy et au calcul scientifique'
 attachment: /static_files/assignments/hw0.zip
 hide_from_announcements: False
 due_event:
     type: due
-    date: 2022-04-03T17:00:00+1:00
+    date: 2022-04-10T17:00:00+1:00
     description: 'Devoir #1 - à remettre'
 ---
 
@@ -21,9 +21,15 @@ Le langage Python sera utilisé pour la réalisation des devoirs de ce cours. En
  - [Jupyter Notebook](https://realpython.com/jupyter-notebook-introduction/)
 
 
-Une machine virtuelle ubuntu semblable à la configuration utilisée dans les labos du département peut être téléchargée deouis la rubrique << Ressources >> de ce site. À l'intérieur de cette machine virtuelle, tous les paquetages et dépendances nécessaires ont été installés pour vous. Utilisez VirtualBox pour l'exécuter. En cas de besoin, le mot de passe de la machine virtuelle est : user. 
+# Lancer le notebook associé au devoir 
 
-# Démarche à suivre  
+## Version en ligne
+
+Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
+
+## Version locale
+
+Une machine virtuelle ubuntu semblable à la configuration utilisée dans les labos du département peut être téléchargée depuis la rubrique << Ressources >> de ce site. À l'intérieur de cette machine virtuelle, tous les paquetages et dépendances nécessaires ont été installés pour vous. Utilisez VirtualBox pour l'exécuter. En cas de besoin, le mot de passe de la machine virtuelle est : user. 
 
   1. Depuis votre machine VM, téléchargez le fichier de démarrage du devoir et décompressez le dans le répertoire de votre choix. 
 
@@ -40,8 +46,3 @@ Une machine virtuelle ubuntu semblable à la configuration utilisée dans les la
   4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courrant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
 
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
-
-
-
-
-

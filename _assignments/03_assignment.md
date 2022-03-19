@@ -1,13 +1,13 @@
 ---
 type: assignment
-date: 2022-04-21T10:00:00+1:00
+date: 2022-04-28T10:00:00+1:00
 title: 'Image panoramique'
 attachment: /static_files/assignments/hw2.zip
 weight: '30%'
 hide_from_announcements: True
 due_event:
     type: due
-    date: 2022-05-08T17:00:00+1:00
+    date: 2022-05-15T17:00:00+1:00
     description: 'Devoir #3 - à remettre'
 ---
 
