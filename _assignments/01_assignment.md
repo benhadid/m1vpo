@@ -10,7 +10,7 @@ due_event:
     description: 'Devoir #1 - à remettre'
 ---
 
-# Tutoriels et Machine Virtuelle
+# Tutoriels Python
 
 Le langage Python sera utilisé pour la réalisation des devoirs de ce cours. En particulier, nous utiliserons Numpy pour le calcul scientifique. Si vous n'êtes pas familier avec Python et Numpy, les sites web suivants fournissent de très bons tutoriels pour eux.
 
@@ -43,6 +43,6 @@ Une machine virtuelle ubuntu semblable à la configuration utilisée dans les la
       user@vlab$ jupyter notebook
       ```      
 
-  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courrant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
+  4. Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courant. Cliquez sur le fichier associé au devoir (fichier avec l’extension `.ipynb`) pour afficher le bloc-notes.
 
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
