@@ -24,6 +24,11 @@ layout: page
                         href="{{ asg.attachment | prepend: site.baseurl }}"><i class="fas fa-file-archive"></i></a>
                   {% endif %}
 
+                  {% if asg.link %}
+                  &nbsp; <a title="Version en ligne"
+                        href="{{ asg.link }}"><i class="fas fa-link"></i></a>
+                  {% endif %}
+
             </strong>
             {% endif %}
 

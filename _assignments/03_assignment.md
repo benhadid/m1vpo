@@ -3,6 +3,7 @@ type: assignment
 date: 2022-04-28T10:00:00+1:00
 title: 'Images panoramiques'
 attachment: /static_files/assignments/hw2.zip
+link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw2%2Fhw2.ipynb
 weight: '30%'
 hide_from_announcements: True
 due_event:
@@ -13,7 +14,7 @@ due_event:
 
 # Version en ligne
 
-Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw2%2Fhw2.ipynb) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
+Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)]({{page.link}}) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
 
 # Version locale  
 

@@ -1,14 +1,16 @@
 ---
 type: assignment
 date: 2022-04-07T10:00:00+1:00
-title: 'Algèbre linéaire et manipulation d'images sous Python'
+title: "Algèbre linéaire et manipulation d'images sous Python"
 attachment: /static_files/assignments/hw0.zip
+link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb
 hide_from_announcements: False
 due_event:
     type: due
     date: 2022-04-10T17:00:00+1:00
     description: 'Devoir #1 - à remettre'
 ---
+
 
 # Tutoriels Python
 
@@ -25,7 +27,7 @@ Le langage Python sera utilisé pour la réalisation des devoirs de ce cours. En
 
 ## Version en ligne
 
-Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
+Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)]({{page.link}}) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
 
 ## Version locale
 
