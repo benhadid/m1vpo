@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2022-04-28T10:00:00+1:00
-title: 'Image panoramique'
+title: 'Images panoramiques'
 attachment: /static_files/assignments/hw2.zip
 weight: '30%'
 hide_from_announcements: True

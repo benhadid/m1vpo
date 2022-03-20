@@ -34,9 +34,9 @@ Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.s
 
   5. Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell \| Run Cells) associée à la question.
 
-  6. Pour pouvoir utiliser l’interface graphique **featuresUI.py** dans la machine virtuelle, vous devez installer des paquetages supplémentaires suivants :
+  6. Pour pouvoir utiliser l’interface graphique **featuresUI.py** dans la machine virtuelle, vous devez installer des paquetages supplémentaires comme suit :
       ```bash
       user@vlab$ sudo apt update
       user@vlab$ sudo apt install python3-tk python-tk 
       ```      
-      Le mot de passe pour le sudo est :  ``user``  si vous ne l’avez pas changé.
+      Le mot de passe pour le sudo est :  ``user`` si vous ne l’avez pas changé.

@@ -1,7 +1,7 @@
 ---
 type: assignment
 date: 2022-04-07T10:00:00+1:00
-title: 'Introduction à Python/Numpy et au calcul scientifique'
+title: 'Algèbre linéaire et manipulation d'images sous Python'
 attachment: /static_files/assignments/hw0.zip
 hide_from_announcements: False
 due_event:
