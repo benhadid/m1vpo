@@ -1,6 +1,6 @@
 ---
 type: assignment
-date: 2022-04-07T10:00:00+1:00
+date: 2022-03-31T10:00:00+1:00
 title: "Algèbre linéaire et manipulation d'images sous Python"
 attachment: /static_files/assignments/hw0.zip
 link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb
