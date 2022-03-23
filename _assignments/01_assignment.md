@@ -1,13 +1,13 @@
 ---
 type: assignment
-date: 2022-03-31T10:00:00+1:00
+date: 2022-03-24T10:00:00+1:00
 title: "Algèbre linéaire et manipulation d'images sous Python"
 attachment: /static_files/assignments/hw0.zip
 link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb
 hide_from_announcements: False
 due_event:
     type: due
-    date: 2022-04-10T17:00:00+1:00
+    date: 2022-04-27T17:00:00+1:00
     description: 'Devoir #1 - à remettre'
 ---
 

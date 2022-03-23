@@ -1,6 +1,6 @@
 ---
 type: assignment
-date: 2022-05-19T10:00:00+1:00
+date: 2022-05-12T10:00:00+1:00
 title: 'Reconstruction 3D'
 attachment: /static_files/assignments/hw3.zip
 link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw3%2Fhw3.ipynb
@@ -8,7 +8,7 @@ weight: '40%'
 hide_from_announcements: True
 due_event:
     type: due
-    date: 2022-06-05T17:00:00+1:00
+    date: 2022-05-29T17:00:00+1:00
     description: 'Devoir #4 - à remettre'
 ---
 
