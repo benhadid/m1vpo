@@ -5,7 +5,7 @@ title: 'Détecteur, descripteur et mise en correspondance de primitives'
 attachment: /static_files/assignments/hw1.zip
 link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw1%2Fhw1.ipynb
 weight: '30%'
-hide_from_announcements: True
+hide_from_announcements: False
 due_event:
     type: due
     date: 2022-04-17T17:00:00+1:00
