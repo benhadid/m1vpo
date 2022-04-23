@@ -3,7 +3,7 @@ type: assignment
 date: 2022-03-24T10:00:00+1:00
 title: "Algèbre linéaire et manipulation d'images sous Python"
 attachment: /static_files/assignments/hw0.zip
-link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw0%2Fhw0.ipynb
+link: https://colab.research.google.com/github/benhadid/m1vpo/blob/gh-pages/static_files/assignments/hw0/hw0.ipynb
 hide_from_announcements: False
 due_event:
     type: due
@@ -27,7 +27,8 @@ Le langage Python sera utilisé pour la réalisation des devoirs de ce cours. En
 
 ## Version en ligne
 
-Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)]({{page.link}}) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
+Vous pouvez cliquer sur cette image [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({{page.link}}) pour lancer le devoir depuis un serveur en ligne (Google Colaboratory). Bien que cette méthode de lancement soit super simple, il n'est pas possible de sauvegarder votre session de travail. Vous devez explicitement faire une copie du/des fichier-s modifié-s et coller le-s contenu-s dans des sessions futures.   
+
 
 ## Version locale
 

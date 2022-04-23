@@ -3,7 +3,7 @@ type: assignment
 date: 2022-05-12T10:00:00+1:00
 title: 'Reconstruction 3D'
 attachment: /static_files/assignments/hw3.zip
-link: https://mybinder.org/v2/gh/benhadid/m1vpo/HEAD?labpath=static_files%2Fassignments%2Fhw3%2Fhw3.ipynb
+link: https://colab.research.google.com/github/benhadid/m1vpo/blob/gh-pages/static_files/assignments/hw3/hw3.ipynb
 weight: '40%'
 hide_from_announcements: True
 due_event:
@@ -14,7 +14,7 @@ due_event:
 
 # Version en ligne
 
-Vous pouvez cliquer sur cette image [![Binder](https://mybinder.org/badge_logo.svg)]({{page.link}}) pour lancer le devoir depuis un serveur en ligne (hébergé chez mybinder.org). Bien que cette méthode de lancement soit super simple, le temps de chargement du notebook et la qualité d'interaction dépendent largement du taux de charge des serveurs gratuits fournis par mybinder.org. 
+Vous pouvez cliquer sur cette image [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]({{page.link}}) pour lancer le devoir depuis un serveur en ligne (Google Colaboratory). Bien que cette méthode de lancement soit super simple, il n'est pas possible de sauvegarder votre session de travail. Vous devez explicitement faire une copie du/des fichier-s modifié-s et coller le-s contenu-s dans des sessions futures.   
 
 
 # Version locale  
