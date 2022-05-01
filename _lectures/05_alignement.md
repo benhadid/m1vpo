@@ -8,6 +8,10 @@ hide_from_announcements: True
 links:
     - url:  https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/Ef4-lOc_UGdEkqCjhxOClxoBJqbvu2WRtMAPW-RFKjxMpQ?e=FLgkNk 
       name: visualiser
+    - url: https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/ERoVaAHu9JtLpfkfE0nYrpIBna3v7ivOBtLKb7PouJaTCA?e=VCIqeu      
+      name: handout
+    #- url: /static_files/docs/lec05_alignement.pdf
+    #  name: handout
     #- url:  https://1drv.ms/p/s!Agf0g-qZKM8_2TDY-ey-n-FX85Kg?e=dAsN66
     #  name: diaporama
 ---
