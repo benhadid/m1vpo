@@ -5,7 +5,7 @@ title: 'Reconstruction 3D'
 attachment: /static_files/assignments/hw3.zip
 link: https://colab.research.google.com/github/benhadid/m1vpo/blob/gh-pages/static_files/assignments/hw3/hw3.ipynb
 weight: '40%'
-hide_from_announcements: True
+hide_from_announcements: False
 due_event:
     type: due
     date: 2022-05-29T17:00:00+1:00
