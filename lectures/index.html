@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PJCD79GLQ3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-PJCD79GLQ3');
+  </script>
+  
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title> Cours - Vision Par Ordinateur (M1VPO) / Printemps 2022 </title>
+  <meta name="description" content="Cours - Vision Par Ordinateur (M1VPO) / Printemps 2022">
+
+  <link rel="shortcut icon" href="https://benhadid.github.io//m1vpo/favicon.ico?" />
+  <link rel="stylesheet" href="/m1vpo/_css/main.css">
+  <link rel="canonical" href="https://benhadid.github.io//m1vpo/lectures/">
+  <link rel="alternate" type="application/rss+xml" title="Vision Par Ordinateur (M1VPO) / Printemps 2022 - " href="https://benhadid.github.io//m1vpo/feed.xml" />
+
+  <link rel='stylesheet' id='open-sans-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300italic%2C400italic%2C600italic%2C300%2C400%2C600&#038;subset=latin%2Clatin-ext&#038;ver=4.2.4' type='text/css' media='all' />
+  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:600italic,600,400,400italic' rel='stylesheet' type='text/css'>
+
+  
+
+  
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+  <!-- MathJax -->
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+  </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper" style="z-index: 100;">
+      <table><tr>
+          <td><img width="75" src="/m1vpo/_images/logo.png" valign="middle"></td>
+          <td style="padding-left:10px;">
+<a class="schoolname" style="font-size: 15px;" href=""></a>
+          <br>
+          <span style="margin-top: -2px;margin-bottom: -10px;" class="site-title"><a href="/m1vpo/" title="Vision Par Ordinateur (M1VPO) / Printemps 2022 - "><b>Vision Par Ordinateur (M1VPO)</b></a></span>
+          <br>
+          <span class="coursesemeter" style="font-size: 12px;font-weight: bold;margin-top: 10px;display: block;">Printemps 2022</span>
+          </td>
+        </tr></table>
+
+    <nav class="site-nav">
+
+      <a href="#" class="menu-icon menu.open">
+        <svg viewbox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"></path>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"></path>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"></path>
+        </svg>
+      </a>  
+
+    <div class="trigger">
+<h1>Main Navigation</h1>
+
+ <ul class="menu">
+    
+    <li>
+
+      
+      
+
+      <a class="page-link" href="/m1vpo/">
+        <i class="fa fa-home fa-lg"></i> Accueil
+      </a>
+
+    </li>
+    
+    <li>
+
+      
+      
+
+      <a class="page-link" href="/m1vpo/schedule/">
+        <i class="fas fa-calendar-alt"></i> Programme
+      </a>
+
+    </li>
+    
+    <li>
+
+      
+      
+
+      <a class="page-link" href="/m1vpo/lectures/">
+        <i class="fas fa-book-reader"></i> Cours
+      </a>
+
+    </li>
+    
+    <li>
+
+      
+      
+
+      <a class="page-link" href="/m1vpo/assignments/">
+        <i class="fas fa-laptop-code"></i> Devoirs
+      </a>
+
+    </li>
+    
+    <li>
+
+      
+      
+
+      <a class="page-link" href="/m1vpo/materials/">
+        <i class="fas fa-book"></i> Ressources
+      </a>
+
+    </li>
+    
+</ul>
+
+
+     </div>  
+    </nav>
+
+  </div>
+
+  <div class="header-texture" style="height:100%; z-index: 0; position: absolute; top:0; right: 0; left: 0; 
+  background-image: url('/m1vpo/_images/pattern.png');"></div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Cours</h1>
+  </header>
+
+  <article class="post-content">
+    <!--You can download the lectures here. We will try to upload lectures prior to their corresponding classes.-->
+
+
+<ul id="archive">
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_01.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_01.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Introduction</span><br>
+
+        <strong>thème :</strong> Définition et applications de la vision par ordinateur
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EUsJIIhn-WBBo_ht08JcYSoB5XRGTDNXgFHN_zYC-co-WQ?e=hs2dRg%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/ES76wiCLVTZLk7xOA64np9YBx8JC9LiwzC7F2Suco7Li-Q?e=b5jeAK%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 1</li>
+</ul>
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_02.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_02.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Primitives locales &amp; détection de coins</span><br>
+
+        <strong>thème :</strong> Comment identifier d'une manière efficace et reproductible des zones caractéristiques dans l'image
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EXoQhgfXZPdIheUNGmxefMEBgAJE4tBc-cCrEn-gN7Y0pg?e=5RCj9k%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/EYrOVK5-ST9PsbOLf7WMbccBdgaPoAdceqhJ28NZFecJcg?e=SF5vUr%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 7.1</li>
+</ul>
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_03.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_03.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Primitives locales &amp; descripteurs</span><br>
+
+        <strong>thème :</strong> Comment décrire d'une manière 'unique' et reproductible des zones caractéristiques dans l'image
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EfIwFDUxwSRGgwruJ66gHZoBwMeAb38FR-YJUsU2TOz37A?e=JOwwx9%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/EcibhYr3cBhPhmJZsSRix_ABA-jCB75fyN982-hv0Rn10Q?e=vMhfKb%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 7.1</li>
+</ul>
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_04.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_04.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Transformations et déformations</span><br>
+
+        <strong>thème :</strong> Transformations affine et projective
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="présentation" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EQJpiyV9V_RBtAQvioCyZKgBJemODEK5kQbSEJKUCO_OZA?e=iULmtN%20%0A%20%20%20%20">présentation</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/EZfjXC2lcY5Hk2puizIr-LkBQ46CvLjtL6spSdTTPH_j9Q?e=YhMenH%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 2.1</li>
+</ul>
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_05.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_05.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Alignement des images</span><br>
+
+        <strong>thème :</strong> Comment transformer des images affin de les aligner pour en faire une image panoramique
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/Ef4-lOc_UGdEkqCjhxOClxoBJqbvu2WRtMAPW-RFKjxMpQ?e=FLgkNk%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/ERoVaAHu9JtLpfkfE0nYrpIBna3v7ivOBtLKb7PouJaTCA?e=VCIqeu%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 8.1</li>
+</ul>
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_06.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_06.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Image panoramique</span><br>
+
+        <strong>thème :</strong> Comment fusionner des images alignées pour en faire une seule image panoramique
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/ETZPO7P4nzpPmXMh5iTvnJ8BUbL81vfnKvTCruuhwImEnw?e=T17BtQ%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/EdO4ZcfiGeNJire1R4P5-Z4BsfZAlCeBoGHIkJ8vpFdE3Q?e=Zke6br%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 8.2, 8.4</li>
+</ul>
+
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_07.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_07.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Appareil photographique</span><br>
+
+        <strong>thème :</strong> Comment l'image est formée dans un appareil photographique
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EUw6TAqzzMdDryE2awUqEAQBPgTLZoRViUplNsoqFMsWmA?e=DeYi69%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/ERiHPDRKcV9Ksp41HmYiyGsBeq6k03jClz0Quk2MSGs5sA?e=rfhzZV%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 7.4.3 – 11.2</li>
+</ul>
+
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_08.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_08.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Etalonnage de caméra</span><br>
+
+        <strong>thème :</strong> Déterminer les paramètres intrinsèques et extrinsèques d'une caméra
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EftUlCHrnIROvLY6xfBjEzkBfWel2BrCOqNytEAOv0xpog?e=e2ci2z%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/EUNCur3DqRpJjoU5f3Lw7Z4BQoZw3ErCiPekqua8yGPiEA?e=xCkSoT%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 2.1</li>
+</ul>
+
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+<li class="archiveposturl" style="background: transparent">
+<div class="lecture-container">
+    
+    <div class="thumbnail">
+      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('/m1vpo/static_files/presentations/lec_09.jpg');">
+        <img src="/m1vpo/static_files/presentations/lec_09.jpg">
+      </div>
+    </div>
+    
+    <div class="content">
+        <span style="font-weight: bold;">Stéréovision</span><br>
+
+        <strong>thème :</strong> Retrouver l'information 3D à partir de deux caméras (ou plus)
+        <br>
+        <strong>
+        
+    
+    
+    [<a title="visualiser" href="https://adminunivalger-my.sharepoint.com/:p:/g/personal/a_benhadid_univ-alger_dz/EdPmyb5LCItHomrDL_YeLhUB-94j5AtzirUt9O9c3zOYkw?e=L934rJ%20%0A%20%20%20%20">visualiser</a>]
+    
+    [<a title="handout" href="https://adminunivalger-my.sharepoint.com/:b:/g/personal/a_benhadid_univ-alger_dz/Ec9voppqloxHusAfhS68XYEBXOfrQg2MFG5bLoB2Q2PPAw?e=DIDwLv%20%0A%20%20%20%20">handout</a>]
+    
+    
+
+        </strong>
+
+        
+        <br>
+        <div class="markdown-content" style="margin-top: 3px;">
+        <p><strong>Références :</strong></p>
+<ul>
+  <li>
+<a href="/m1vpo/_images/Szeliski2ndBookFrontCover.png">Szeliski</a> : 11.2.4 – 11.3, 12.1 – 12.4</li>
+</ul>
+
+
+        </div>
+        
+    </div>
+</div>
+</li>
+
+</ul>
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <!--     <h2 class="footer-heading"></h2> -->
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+
+        <p class="text">
+          02 rue Didouche Mourad<br>
+16000 Alger<br>
+
+      </p>
+</div>
+
+      <div class="footer-col  footer-col-2">
+        <ul class="social-media-list">
+
+
+          
+
+          
+
+          
+
+          
+
+          
+
+
+
+
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
