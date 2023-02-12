@@ -86,7 +86,7 @@ GEM
     tzinfo-data (1.2022.7)
       tzinfo (>= 1.0.0)
     wdm (0.1.1)
-    zeitwerk (2.6.6)
+    zeitwerk (2.6.7)
 
 PLATFORMS
   x86_64-linux
