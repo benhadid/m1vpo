@@ -76,25 +76,42 @@ class DummyKeypointDetector(KeypointDetector):
         image /= 255.
         features = []
         height, width = image.shape[:2]
+           
+        r = image[:, :, 0]
+        g = image[:, :, 1]
+        b = image[:, :, 2]
+                 
+        row, col = np.where( int(255 * (r + g + b) + 0.5) % 100 == 1)
 
-        for y in range(height):
-            for x in range(width):
-                r = image[y, x, 0]
-                g = image[y, x, 1]
-                b = image[y, x, 2]
+        for i in range(np.size(row)):
+          (y, x) = (int(row[i]), int(col[i]))
 
-                if int(255 * (r + g + b) + 0.5) % 100 == 1:
-                    # Si le pixel satisfait ce critère dénué de sens,
-                    # en faire un poinr-clé.
+          f = cv2.KeyPoint()
+          f.pt = (x, y)
+          # Dummy size
+          f.size = 10
+          f.angle = 0
+          f.response = 10
 
-                    f = cv2.KeyPoint()
-                    f.pt = (x, y)
-                    # Dummy size
-                    f.size = 10
-                    f.angle = 0
-                    f.response = 10
+          features.append(f)
 
-                    features.append(f)
+        #for y in range(height):
+        #    for x in range(width):
+        #        r = image[y, x, 0]
+        #        g = image[y, x, 1]
+        #        b = image[y, x, 2]
+
+        #        if int(255 * (r + g + b) + 0.5) % 100 == 1:
+        #            # Si le pixel satisfait ce critère dénué de sens,
+        #            # en faire un poinr-clé.
+
+        #            f = cv2.KeyPoint()
+        #            f.pt = (x, y)
+        #            # Dummy size
+        #            f.size = 10
+        #            f.angle = 0
+        #            f.response = 10
+        #            features.append(f)
 
         return features
 
@@ -125,7 +142,7 @@ class HarrisKeypointDetector(KeypointDetector):
         # chaque pixel et stockez-la dans 'harrisImage'. Calculez également
         # une orientation pour chaque pixel et stockez-la dans 'orientationImage'.
         # TODO-BLOC-DEBUT
-        raise Exception("TODO 1 : dans features.py non implémenté")
+        raise Exception("TODO 1 : dans features.py non implémenté")               
         # TODO-BLOC-FIN
 
         return harrisImage, orientationImage
@@ -142,11 +159,11 @@ class HarrisKeypointDetector(KeypointDetector):
                          de celui-ci est un maximum local dans 
                          son voisinage 7x7.
         '''
-        destImage = np.zeros_like(harrisImage, np.bool)
+        destImage = np.zeros_like(harrisImage, bool)
 
         # TODO 2: Calcul de l'image des maxima locaux
         # TODO-BLOC-DEBUT
-        raise Exception("TODO 2 : dans features.py non implémenté")
+        raise Exception("TODO 2 : dans features.py non implémenté")                
         # TODO-BLOC-FIN
 
         return destImage
@@ -182,22 +199,24 @@ class HarrisKeypointDetector(KeypointDetector):
         # Parcourez les points-clés dans harrisMaxImage et remplissez les 
         # informations nécessaires au calcul du descripteur pour chaque point. 
         # Vous devez remplir x, y et angle.
-        for y in range(height):
-            for x in range(width):
-                if not harrisMaxImage[y, x]:
-                    continue
 
-                f = cv2.KeyPoint()
+        row, col = np.where(harrisMaxImage == True) 
+        
+        for i in range(np.size(row)):
+          y = int(row[i])
+          x = int(col[i])
 
-                # TODO 3 : Remplissez la primitive f avec les données de 
-                # position et d'orientation. Initialisez f.size à 10, 
-                # f.pt à la coordonnée (x, y), f.angle à l'orientation 
-                # en degrés et f.response au score de Harris
-                # TODO-BLOC-DEBUT
-                raise Exception("TODO 3 : dans features.py non implémenté")
-                # TODO-BLOC-FIN
+          f = cv2.KeyPoint()
 
-                features.append(f)
+          # TODO 3 : Remplissez la primitive f avec les données de 
+          # position et d'orientation. Initialisez f.size à 10, 
+          # f.pt à la coordonnée (x, y), f.angle à l'orientation 
+          # en degrés et f.response au score de Harris
+          # TODO-BLOC-DEBUT
+          raise Exception("TODO 3 : dans features.py non implémenté")
+          # TODO-BLOC-FIN
+
+          features.append(f)
 
         return features
 
