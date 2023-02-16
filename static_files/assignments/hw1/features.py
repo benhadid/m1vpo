@@ -81,8 +81,10 @@ class DummyKeypointDetector(KeypointDetector):
         g = image[:, :, 1]
         b = image[:, :, 2]
                  
-        vector = np.vectorize(np.int_)
-        row, col = np.where( vector(255 * (r + g + b) + 0.5) % 100 == 1)
+        #vector = np.vectorize(np.int_)
+        #row, col = np.where( vector(255 * (r + g + b) + 0.5) % 100 == 1)
+        row, col = np.where(       (255 * (r + g + b) + 0.5).astype(int) % 100 == 1)
+
 
         for i in range(np.size(row)):
           (y, x) = (int(row[i]), int(col[i]))
