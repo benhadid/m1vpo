@@ -106,7 +106,7 @@ class DummyKeypointDetector(KeypointDetector):
 
         #        if int(255 * (r + g + b) + 0.5) % 100 == 1:
         #            # Si le pixel satisfait ce critère dénué de sens,
-        #            # en faire un poinr-clé.
+        #            # en faire un point-clé.
 
         #            f = cv2.KeyPoint()
         #            f.pt = (x, y)
@@ -145,7 +145,9 @@ class HarrisKeypointDetector(KeypointDetector):
         # chaque pixel et stockez-la dans 'harrisImage'. Calculez également
         # une orientation pour chaque pixel et stockez-la dans 'orientationImage'.
         # TODO-BLOC-DEBUT
-        raise Exception("TODO 1 : dans features.py non implémenté")               
+        # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+        # quand vous implémentez le code de ce TODO
+        raise Exception("TODO 1 : dans features.py non implémenté !")               
         # TODO-BLOC-FIN
 
         return harrisImage, orientationImage
@@ -166,6 +168,8 @@ class HarrisKeypointDetector(KeypointDetector):
 
         # TODO 2: Calcul de l'image des maxima locaux
         # TODO-BLOC-DEBUT
+        # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+        # quand vous implémentez le code de ce TODO
         raise Exception("TODO 2 : dans features.py non implémenté")                
         # TODO-BLOC-FIN
 
@@ -195,7 +199,7 @@ class HarrisKeypointDetector(KeypointDetector):
         harrisImage, orientationImage = self.computeHarrisValues(grayImage)
 
         # Calcule les maxima locaux dans l'image Harris. Vous devrez implémenter 
-        # cette fonction. Crée une image pour étiquetter les valeurs maximales 
+        # cette fonction. Crée une image pour étiqueter les valeurs maximales 
         # locales de Harris comme Vrai, les autres pixels sur Faux
         harrisMaxImage = self.computeLocalMaxima(harrisImage)
 
@@ -216,6 +220,8 @@ class HarrisKeypointDetector(KeypointDetector):
           # f.pt à la coordonnée (x, y), f.angle à l'orientation 
           # en degrés et f.response au score de Harris
           # TODO-BLOC-DEBUT
+          # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+          # quand vous implémentez le code de ce TODO
           raise Exception("TODO 3 : dans features.py non implémenté")
           # TODO-BLOC-FIN
 
@@ -282,6 +288,8 @@ class SimpleFeatureDescriptor(FeatureDescriptor):
             # tant que vecteur-ligne dans le tableau numpy. Traitez les 
             # pixels à l'extérieur de l'image comme des zéros.
             # TODO-BLOC-DEBUT            
+            # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+            # quand vous implémentez le code de ce TODO
             raise Exception("TODO 4 : dans features.py non implémenté")
             # TODO-BLOC-FIN
 
@@ -320,6 +328,8 @@ class MOPSFeatureDescriptor(FeatureDescriptor):
             transMx = np.zeros((2, 3))
 
             # TODO-BLOC-DEBUT
+            # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+            # quand vous implémentez le code de ce TODO
             raise Exception("TODO 5 : dans features.py non implémenté")
             # TODO-BLOC-FIN
 
@@ -334,6 +344,8 @@ class MOPSFeatureDescriptor(FeatureDescriptor):
             # alors affectez zéro au descripteur. Enfin, stockez le descripteur 
             # dans le tableau 'desc'.
             # TODO-BLOC-DEBUT
+            # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+            # quand vous implémentez le code de ce TODO
             raise Exception("TODO 6 : dans features.py non implémenté")
             # TODO-BLOC-FIN
 
@@ -447,6 +459,8 @@ class SSDFeatureMatcher(FeatureMatcher):
         # Remarque : plusieurs primitives de la première image pourraient être 
         # appariées à la même primitive dans la deuxième image.
         # TODO-BLOC-DEBUT
+        # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+        # quand vous implémentez le code de ce TODO
         raise Exception("TODO 7 : dans features.py non implémenté")
         # TODO-BLOC-FIN
 
@@ -491,6 +505,8 @@ class RatioFeatureMatcher(FeatureMatcher):
         # appariées à la même primitive dans la deuxième image.
         # Vous n'avez pas besoin de seuiller les correspondances dans cette fonction
         # TODO-BLOC-DEBUT
+        # N'oubliez pas d'enlever ou de commenter la ligne en dessous
+        # quand vous implémentez le code de ce TODO
         raise Exception("TODO 8 : dans features.py non implémenté")
         # TODO-BLOC-END
 
