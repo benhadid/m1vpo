@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title> Détecteur, descripteur et mise en correspondance de primitives - Vision Par Ordinateur (M1VPO) / Printemps 2023 </title>
-  <meta name="description" content="Version en ligneVous pouvez cliquer sur cette image  pour lancer le devoir depuis un serveur en ligne (Google Colaboratory).Version locale      Depuis votre ...">
+  <meta name="description" content="Version en ligneVous pouvez cliquer sur cette image  pour lancer le devoir depuis un serveur en ligne (Google Colaboratory).Version locale (VM)      Depuis v...">
 
   <link rel="shortcut icon" href="https://benhadid.github.io//m1vpo/favicon.ico?" />
   <link rel="stylesheet" href="/m1vpo/_css/main.css">
@@ -216,7 +216,7 @@
 
 <p>Vous pouvez cliquer sur cette image <a href="https://colab.research.google.com/github/benhadid/m1vpo/blob/gh-pages/static_files/assignments/hw1/hw1.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a> pour lancer le devoir depuis un serveur en ligne (Google Colaboratory).</p>
 
-<h1 id="version-locale">Version locale</h1>
+<h1 id="version-locale-vm">Version locale (VM)</h1>
 
 <ol>
   <li>
@@ -231,16 +231,18 @@
 </code></pre></div>    </div>
   </li>
   <li>
-    <p>Un navigateur Web devrait démarrer en affichant la liste des fichiers dans le répertoire courant. Cliquez sur le fichier associé au devoir (fichier avec l’extension <code class="language-plaintext highlighter-rouge">.ipynb</code>) pour afficher le bloc-notes.</p>
+    <p>Un navigateur Web devrait démarrer et afficher la liste des fichiers dans le répertoire courant. Cliquez sur le fichier associé au devoir (fichier avec l’extension <code class="language-plaintext highlighter-rouge">.ipynb</code>) pour lancer le bloc-notes.</p>
   </li>
   <li>
     <p>Lisez attentivement les questions et les commentaires dans le bloc-notes. Pour évaluer une réponse à une question du bloc-notes, exécutez la cellule (Cell | Run Cells) associée à la question.</p>
   </li>
-  <li>Pour pouvoir utiliser l’interface graphique <strong>featuresUI.py</strong> dans la machine virtuelle, vous devez installer des paquetages supplémentaires comme suit :
+  <li>
+    <p>Un outil d’aide fourni avec ce devoir (c.-à-d. l’interface graphique <strong><code class="language-plaintext highlighter-rouge">featuresUI.py</code></strong>) nécessite l’installation de paquetages supplémentaires dans la VM avant de pouvoir l’utiliser :</p>
+
     <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code> user@vlab<span class="nv">$ </span><span class="nb">sudo </span>apt update
  user@vlab<span class="nv">$ </span><span class="nb">sudo </span>apt <span class="nb">install </span>python3-tk python-tk 
 </code></pre></div>    </div>
-    <p>Le mot de passe pour le sudo est :  <code class="language-plaintext highlighter-rouge">user</code> si vous ne l’avez pas changé.</p>
+    <p>Le mot de passe pour le sudo est :  <code class="language-plaintext highlighter-rouge">user</code> (si vous ne l’avez pas changé entre temps).</p>
   </li>
 </ol>
 
