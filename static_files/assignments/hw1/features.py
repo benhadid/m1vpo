@@ -13,12 +13,12 @@ from scipy import ndimage, spatial
  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 '''
 
-def inbounds(shape, indices):
-    assert len(shape) == len(indices)
-    for i, ind in enumerate(indices):
-        if ind < 0 or ind >= shape[i]:
-            return False
-    return True
+#def inbounds(shape, indices):
+#    assert len(shape) == len(indices)
+#    for i, ind in enumerate(indices):
+#        if ind < 0 or ind >= shape[i]:
+#            return False
+#    return True
 
 ## Tâche 1 : Détecteur de points-clés ##############################################
 
@@ -52,7 +52,7 @@ class KeypointDetector(object):
         # TODO Bonus : Implémentez ici la méthode de suppression non-maximale 
         # adaptative pour la sélection des points-clés les plus pertinents
         # TODO-BLOC-DEBUT
-        raise NotImplementedError("Bonus : dans features.py non implémenté")
+        raise NotImplementedError("Tâche Bonus dans features.py non implémentée !")
         # TODO-BLOC-FIN
 
         return features
@@ -456,8 +456,6 @@ class SSDFeatureMatcher(FeatureMatcher):
         # Faites correspondre une primitive de la première image avec la primitive 
         # la plus proche de la seconde image on utilisant la distance SMC entre
         # descripteurs.
-        # Remarque : plusieurs primitives de la première image pourraient être 
-        # appariées à la même primitive dans la deuxième image.
         # TODO-BLOC-DEBUT
         # N'oubliez pas d'enlever ou de commenter la ligne en dessous
         # quand vous implémentez le code de ce TODO
@@ -500,10 +498,8 @@ class RatioFeatureMatcher(FeatureMatcher):
         # utilisant le rapport de distance entre primitives.
         # Faites correspondre une primitive de la première image avec la primitive 
         # la plus proche de la seconde image on utilisant le rapport de distance 
-        # entre les deux meilleurs descripteurs correspondants.
-        # Remarque : plusieurs primitives de la première image pourraient être 
-        # appariées à la même primitive dans la deuxième image.
-        # Vous n'avez pas besoin de seuiller les correspondances dans cette fonction
+        # entre les deux meilleurs descripteurs correspondants.        
+        # Utilisez un seuil de 0.7 pour sélectionner les 'bonnes' correspondances
         # TODO-BLOC-DEBUT
         # N'oubliez pas d'enlever ou de commenter la ligne en dessous
         # quand vous implémentez le code de ce TODO
