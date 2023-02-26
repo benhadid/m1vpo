@@ -36,16 +36,16 @@ def fit_transform_matrix(p0, p1):
     H = None
     
     #TODO 1 : Calculez la matrice de transformation H. Notez que p0 et p1
-    #         sont des tableaux de coordonnées organisés en lignes.
-    #          c-à-d.  p0[i,:] = [p0line_i, p0col_i]
-    #             et   p1[j,:] = [p1line_j, p1col_i]
+    #         sont des tableaux de coordonnées organisés (lignes, colonnes).
+    #          c-à-d.  p0[i,:] = [x_i, y_i]
+    #             et   p1[j,:] = [x'_j, y'_j]
     # TODO-BLOC-DEBUT    
     raise NotImplementedError("TODO 1 : dans panorama.py non implémenté")
     # TODO-BLOC-FIN
 
     return H
 
-def ransac(keypoints1, keypoints2, matches, n_iters=500, threshold=0.5):
+def ransac(keypoints1, keypoints2, matches, n_iters=500, threshold=1):
     """
     Utilisez RANSAC pour trouver une transformation projective robuste
 
@@ -57,9 +57,9 @@ def ransac(keypoints1, keypoints2, matches, n_iters=500, threshold=0.5):
            des bonnes correspondances
 
     Entrées :
-        keypoints1 -- matrice M1 x 2, chaque rangée contient les coordonnées d'un point-clé dans image1
-        keypoints2 -- matrice M2 x 2, chaque rangée contient les coordonnées d'un point-clé dans image2
-        matches -- matrice N x 2, chaque rangée représente une correspondance
+        keypoints1 -- matrice M1 x 2, chanque rangée contient les coordonnées d'un point-clé (x_i,y_i) dans image1
+        keypoints2 -- matrice M2 x 2, chanque rangée contient les coordonnées d'un point-clé (x'_i,y'_i) dans image2
+        matches  -- matrice N x 2, chaque rangée représente une correspondance
             [indice dans keypoint1, indice dans keypoint 2]
         n_iters -- le nombre d'itérations dans RANSAC
         threshold -- le seuil pour trouver des bonnes correspondances
@@ -68,7 +68,7 @@ def ransac(keypoints1, keypoints2, matches, n_iters=500, threshold=0.5):
         H -- une estimation robuste de la transformation des points keypoints1 en points keypoints2
         matches[max_inliers] -- les bonnes correspondances
     """
-    # indices des bonnes correspondances dans le tableau 'matches' 
+    # indices des bonnes correespondances dans le tableau 'matches' 
     max_inliers = []
     
     # matrice to transformation Homographique
@@ -77,13 +77,12 @@ def ransac(keypoints1, keypoints2, matches, n_iters=500, threshold=0.5):
     # initialisation du générateur de nombres aléatoires
     # fixé le seed pour pouvoir comparer le résultat retourné par 
     # cette fonction par rapport à la solution référence
-    #rand = np.random.default_rng(seed=131)
     random.seed(131)
     
     #TODO 2 : Implémentez ici la méthode RANSAC pour trouver une transformation robuste
     # entre deux images image1 et image2.
     # TODO-BLOC-DEBUT    
-    raise NotImplementedError("TODO 2 : dans panorama.py non implémenté")    
+    raise NotImplementedError("TODO 2 : dans panorama.py non implémenté")       
     # TODO-BLOC-FIN
     
     return H, matches[max_inliers]
@@ -91,7 +90,7 @@ def ransac(keypoints1, keypoints2, matches, n_iters=500, threshold=0.5):
 
 def get_output_space(imgs, transforms):
     """
-    Ceci est une fonction auxiliaire qui prend en entrée une liste d'images et
+    Ceci est une fonction auxilière qui prend en entrée une liste d'images et
     des transformations associées et calcule en sortie le cadre englobant
     les images transformées.
 
@@ -105,7 +104,7 @@ def get_output_space(imgs, transforms):
     """
 
     assert (len(imgs) == len(transforms)),\
-        'Different number of images and associated transforms'
+        'number of images and number of associated transforms mismatch'
 
     output_shape = None
     offset = None
@@ -114,9 +113,9 @@ def get_output_space(imgs, transforms):
 
     for img, H in zip(imgs, transforms):
         r, c, _ = img.shape        
-        corners = np.array([[0, 0], [r, 0], [0, c], [r, c]])
+        corners = np.array([[0, 0], [0, r], [c, 0], [c, r]])
 
-        warped_corners = pad(corners.astype(np.float)).dot(H).T
+        warped_corners = pad(corners.astype(np.float)).dot(H.T).T
         all_corners.append( unpad( np.divide(warped_corners, warped_corners[2,:] ).T ) )
                           
     # Trouver l'étendue des images déformée
@@ -125,13 +124,15 @@ def get_output_space(imgs, transforms):
     # La forme globale du cadre sera max - min
     corner_min = np.min(all_corners, axis=0)
     corner_max = np.max(all_corners, axis=0)
+    
+    # taille de la zone d'affichage (largeur, longueur)
     output_shape = corner_max - corner_min
-
+    
     # Conversion en nombres entiers avec np.ceil et dtype
     output_shape = tuple( np.ceil(output_shape).astype(np.int) )
     
-    # Trouver le deplacement du coin inférieur du cadre par 
-    # rapport à l'origine (0,0)
+    # Calcul du deplacement (disp_hor, disp_vert) du coin inférieur 
+    # du cadre par rapport à l'origine (0,0)
     offset = corner_min
 
     return output_shape, offset
@@ -184,8 +185,8 @@ def warp_image(img, H, output_shape, offset, method=None):
     # inverse pour retrouver vos coordonnées dans l'image source.
 
     # TODO 4 : Dans un deuxième temps, implémentez la partie du code dans cette
-    # fonction qui calcule les coefficients du canal alpha de l'image transformée.
-    # (contrôlé avec le paramètre method donné ci-dessus)
+    # fonction (controlé avec le paramètre method donné ci-dessus) qui calcule 
+    # les coefficients du canal alpha de l'image transformée.
     # TODO-BLOC-DEBUT    
     raise NotImplementedError("TODO 3,4 : dans panorama.py non implémenté")    
     # TODO-BLOC-FIN
@@ -209,13 +210,13 @@ def stitch_multiple_images(imgs, keypoints_list, matches_list, imgref=0, blend=N
                'linear'
 
     Returns:
-        panorama: Final panorama image in coordinate frame of reference image 
+        panorama: Final panorma image in coordinate frame of reference image 
     """
     panorama = None
     
-    #TODO BONUS : Votre implémentation ici
+    #TODO BONUS : Votre implémenation ici
     # TODO-BLOC-DEBUT    
-    raise NotImplementedError("TODO BONUS : dans panorama.py non implémenté")
+    raise NotImplementedError("TODO BONUS : dans panorama.py non implémenté")    
     # TODO-BLOC-FIN
-
+    
     return panorama
