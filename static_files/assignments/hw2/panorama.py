@@ -191,7 +191,7 @@ def warp_image(img, H, output_shape, offset, method=None):
     # inverse pour retrouver vos coordonnées dans l'image source.
 
     # TODO 5 : Dans un deuxième temps, implémentez la partie du code dans cette
-    # fonction (controlé avec le paramètre method donné ci-dessus) qui calcule 
+    # fonction (contrôlée avec le paramètre 'method' donné ci-dessus) qui calcule 
     # les coefficients du canal alpha de l'image transformée.
     # TODO-BLOC-DEBUT    
     raise NotImplementedError("TODO 3/5 : dans panorama.py non implémenté")    
