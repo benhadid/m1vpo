@@ -2,7 +2,6 @@ import math
 import numpy as np
 import random
 
-from scipy.spatial.distance import cdist
 from utils import pad, unpad
 
 '''
