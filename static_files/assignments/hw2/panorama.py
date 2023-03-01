@@ -40,7 +40,7 @@ def fit_transform_matrix(p0, p1):
 
     H = None
     
-    #TODO 1 : Calculez la matrice de transformation H. Notez que p0 et p1
+    #TODO 1 : Calculez la matrice de transformation H.
     # TODO-BLOC-DEBUT    
     raise NotImplementedError("TODO 1 : dans panorama.py non implémenté")
     # TODO-BLOC-FIN
