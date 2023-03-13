@@ -122,7 +122,7 @@ def get_output_space(imgs, transforms):
         corners = np.array([[0, 0], [0, r], [c, 0], [c, r]])
 
         # transformation homographique des coins          
-        warped_corners = pad(corners.astype(np.float)).dot(H.T).T        
+        warped_corners = pad(corners.astype(float)).dot(H.T).T        
         all_corners.append( unpad( np.divide(warped_corners, warped_corners[2,:] ).T ) )
                           
     # Trouver l'étendue des cadres transformées
@@ -136,7 +136,7 @@ def get_output_space(imgs, transforms):
     output_shape = corner_max - corner_min
     
     # Conversion en nombres entiers avec np.ceil et dtype
-    output_shape = tuple( np.ceil(output_shape).astype(np.int) )
+    output_shape = tuple( np.ceil(output_shape).astype(int) )
     
     # Calcul de l'offset (horz, vert) du coin inférieur du cadre par rapport à l'origine (0,0).
     offset = corner_min
