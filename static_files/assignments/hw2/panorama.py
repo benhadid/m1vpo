@@ -196,7 +196,7 @@ def warp_image(img, H, output_shape, offset, method=None):
     raise NotImplementedError("TODO 3/5 : dans panorama.py non implémenté")    
     # TODO-BLOC-FIN
     
-    return img_warped, mask
+    return image_warped, mask
 
 
 def naive_fusion(img1_warped, img2_warped):
