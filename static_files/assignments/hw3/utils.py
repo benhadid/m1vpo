@@ -3,9 +3,6 @@ import math
 import cv2
 import matplotlib.pyplot as plt
 
-#from matplotlib.patches import Patch
-#from mpl_toolkits.mplot3d.art3d import Poly3DCollection
-
 from stereo import epipolar_match
 
 
@@ -381,9 +378,9 @@ class CameraPoseVisualizer:
         self.fig.tight_layout()
         
         if pts3d_list is None:
-            plt.title('Camera pose')
+            plt.title('') #Camera pose
         else:
-            plt.title('Camera pose witn projected 3d points')                        
+            plt.title('') #Camera pose witn projected 3d points                       
         plt.show()
                     
     def set_axes_equal(self, ax):
