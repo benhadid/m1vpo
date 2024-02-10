@@ -467,18 +467,18 @@ a.tosu {
   border-width: 0.1em;
   border-style: solid;
   border-bottom: none; }
-.responsive-table .table-row-lecture {
-  background-color: #f9f3cf; }
-.responsive-table .table-row-discussion {
-  background-color: #f9f3cf; }
-.responsive-table .table-row-quiz {
-  background-color: #ede7cf; }
 .responsive-table .table-row-lab {
-  background-color: #ede7cf; }
+  background-color: #dcd6f7; }
+.responsive-table .table-row-discussion {
+  background-color: #424874; }
+.responsive-table .table-row-quiz {
+  background-color: #a6b1e1; }
+.responsive-table .table-row-lecture {
+  background-color: #cacfd6; }
 .responsive-table .table-row-assignment {
-  background-color: #ede7cf; }
+  background-color: #d6e5e3; }
 .responsive-table .table-row-project {
-  background-color: #ede7cf; }
+  background-color: #d6e5e3; }
 .responsive-table .table-row-holidays {
   background-color: #ffffff; }
 .responsive-table .table-row-due {
